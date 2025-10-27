@@ -6,6 +6,10 @@
 
 A focused, Anki-based tool to practice typing long, case-sensitive commands with spaced repetition. AnkiTypist combines AnkiConnect and a lightweight web UI for immediate, interactive typing practice and grading.
 
+# Current Support
+- Anki 2.1.x
+- Windows OS
+- Python 3.8+ 
 
 ## Key features
 - Preloads decks and stats via AnkiConnect for instant access
@@ -18,38 +22,38 @@ A focused, Anki-based tool to practice typing long, case-sensitive commands with
 ## Quick start
 
 1. Clone the repo:
-   bash
+```bash
    git clone https://github.com/YourUser/AnkiTypist.git
    cd AnkiTypist
-   
+```
 
 2. Install requirements:
-   bash
+```bash
    pip install -r requirements.txt
-   
+```
 
 3. Configure Anki path (edit in anki_server.py):
-   python
-   # Example: set ANKI_PATH to your local Anki executable
+```python
    ANKI_PATH = r"C:\Users\<YourUsername>\AppData\Local\Programs\Anki\anki.exe"
-   
+```
 
 4. Run:
-   bash
+```bash
    python anki_server.py
-   
+```
 
 This will open the AnkiTypist interface and preload your decks in the background.
 
 
 ## Build a Windows executable (optional)
 Build with PyInstaller:
-bash
+```bash
 pyinstaller --onefile --windowed anki_server.py --icon ankiserver.ico
+```
 
+```
 Result: dist/anki_server.exe
-
-
+```
 
 ## How it works (brief)
 - Checks for and starts Anki (hidden) if not running
