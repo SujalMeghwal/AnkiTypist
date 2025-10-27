@@ -32,12 +32,7 @@ A focused, Anki-based tool to practice typing long, case-sensitive commands with
    pip install -r requirements.txt
 ```
 
-3. Configure Anki path (edit in anki_server.py):
-```python
-   ANKI_PATH = r"C:\Users\<YourUsername>\AppData\Local\Programs\Anki\anki.exe"
-```
-
-4. Run:
+3. Run:
 ```bash
    python anki_server.py
 ```
