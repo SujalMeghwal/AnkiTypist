@@ -14,7 +14,7 @@ from collections import defaultdict
 # ------------------- CONFIG -------------------
 ANKI_CONNECT_URL = "http://localhost:8765"
 ANKI_VERSION = 6
-ANKI_PATH = r"C:\Users\Reek\AppData\Local\Programs\Anki\anki.exe"  # Update if different
+ANKI_PATH = os.path.join(os.environ["USERPROFILE"], "AppData", "Local", "Programs", "Anki", "anki.exe")
 
 app = Flask(__name__)
 
